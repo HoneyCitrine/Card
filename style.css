@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "nightregular";
+  src: url("night-regular-webfont.woff2") format("woff2"),
+    url("night-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+  scroll-behavior: smooth;
+}
+#banner{
+    width: 80%;
+}
+
+body {
+      font-family: "nightregular";
+    background-image: url(./bg.png);
+}
+.container {
+    background-color: white;
+    text-align: center;
+    margin: 100px 300px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 30px ;
+}
+.icon {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid rgb(214, 200, 72);
+    margin-bottom: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.link1 {
+  position: relative;
+  transition: clip-path 275ms ease;
+}
+.link1:hover span::before, .link1:focus span::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.link1 span {
+  position: relative;
+  display: inline-block;
+  color: #df78da;
+}
+.link1 span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #df91c1;
+  text-decoration: underline;
+  text-decoration-color: #df91c1;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
+}
+link1>span.wavy::before {
+  text-decoration-style: wavy;
+}
+
+.link2 {
+  position: relative;
+  transition: clip-path 275ms ease;
+}
+.link2:hover span::before, .link2:focus span::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.link2 span {
+  position: relative;
+  display: inline-block;
+  color: #df788e;
+}
+.link2 span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #d67383;
+  text-decoration: underline;
+  text-decoration-color: #a13e4e;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
+}
+
+.link3 {
+  position: relative;
+  transition: clip-path 275ms ease;
+}
+.link3:hover span::before, .link3:focus span::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.link3 span {
+  position: relative;
+  display: inline-block;
+  color: #8983dd;
+}
+.link3 span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #7259ce;
+  text-decoration: underline;
+  text-decoration-color: #593dc0;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
+}
+
+.banner-heading{
+  text-align: center;
+  align-items: center;
+}
+
+
+/* Arrow */
+.scroll {
+  text-align: center;
+  align-items: center;
+  margin-left: 45%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: relative;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+}
+.scroll::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(-45deg);
+}
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+/* Back to Top Button */
+
+/* #button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+} */
